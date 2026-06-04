@@ -1,11 +1,65 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>flexbox</title>
+    <link href="styles/styles.css" rel="stylesheet">
 </head>
 
 <body>
-</body> 
+    <div class="flexbox">
+        <div class="grid">
+
+            <div class="row">
+                <!-- align-items: flex-end | justify-content: flex-start -->
+                <div class="container container--bottom-start">
+                    <div class="card card--square"></div>
+                    <div class="card card--square"></div>
+                    <div class="card card--square"></div>
+                </div>
+
+                <!-- align-items: center | justify-content: center -->
+                <div class="container container--center">
+                    <div class="card card--tall"></div>
+                    <div class="card card--tall"></div>
+                    <div class="card card--tall"></div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- align-items: flex-end | justify-content: flex-end -->
+                <div class="container container--center-end">
+                    <div class="card card--square"></div>
+                    <div class="card card--square"></div>
+                    <div class="card card--square"></div>
+                </div>
+
+                <!-- align-items: flex-end | justify-content: space-between, varying heights -->
+                <div class="container container--bottom-between">
+                    <div class="card card--square"></div>
+                    <div class="card card--square"></div>
+                    <div class="card card--square card--self-end"></div>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- align-items: center | justify-content: space-between, text cards -->
+                <div class="container container--center-between">
+                    <div class="card card--tall">Some text</div>
+                    <div class="card card--short">Some text</div>
+                    <div class="card card--tall">Some text</div>
+                </div>
+
+                <!-- align-items: center | justify-content: space-between, middle card wider+taller -->
+                <div class="container container--center-between">
+                    <div class="card card--square"></div>
+                    <div class="card card--square card--wide"></div>
+                    <div class="card card--square"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
 </html>

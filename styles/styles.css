@@ -1,0 +1,99 @@
+.flexbox {
+    display: flex;
+    background-color: #3e121a;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* grid is now a column of rows */
+.grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.row {
+    display: flex;
+    gap: 20px;
+}
+
+/* Block: container */
+.container {
+    flex: 1;
+    height: 160px;
+    background-color: #F48C06;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Container modifiers */
+.container--bottom-start {
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.container--center {
+    align-items: center;
+    justify-content: center;
+}
+
+.container--center-end {
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.container--bottom-between {
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.container--center-between {
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+
+/* Block: card */
+.card {
+    background-color: #9D0208;
+    border-radius: 4px;
+    color: white;
+    font-size: 12px;
+    padding: 6px;
+}
+
+/* Card modifiers */
+.card--square {
+    width: 78px;
+    height: 78px;
+}
+
+.card--short {
+    width: 78px;
+    height: 50px;
+}
+
+.card--medium {
+    width: 78px;
+    height: 65px;
+}
+
+.card--tall {
+    width: 78px;
+    height: 120px;
+}
+
+.card--wide {
+    flex: 1;
+}
+
+.card--self-end {
+    align-self: flex-end;
+}
+
